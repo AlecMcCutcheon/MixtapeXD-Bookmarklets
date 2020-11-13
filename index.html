@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <title>OG Bookmarklets</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        display: none;
+    }
+     #show {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+        display: block;
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    
+    img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display: none; }
+    </style>    
+</head>
+
+<body>
+<div id="show">
+    <h1>OG Bookmarklets (Drag & Drop)</h1>
+<a> | </a>
+<a class="bml" href="javascript:(function() { document.body.appendChild(document.createElement('script')).src = 'https://bookmarkletserver.000webhostapp.com/maclookup.js';})()";>Mac Address Lookup</a>
+<a> | </a>
+<a class="bml" href="javascript:(function() { document.body.appendChild(document.createElement('script')).src = 'https://bookmarkletserver.000webhostapp.com/phonenumberlookup.js';})()";>Phone Number Lookup (WIP)</a>
+<a> | </a>
+<a class="bml" href="javascript:(function() { document.body.appendChild(document.createElement('script')).src = 'https://bookmarkletserver.000webhostapp.com/licenseplatelookup.js';})()";>License Plate Lookup (WIP)</a>
+<a> | </a>
+<a class="bml" href="javascript:var els = document.getElementsByTagName('input'); for(var x=0; x<els.length; x++){ if(els[x].type.toLowerCase() == 'password' ){ var test =%20els[x].type = 'text';}}">Pa**word Revealer</a>
+<a> | </a>
+<a class="bml" href='javascript:(function(){var title=prompt("New title?");document.title=title})();'>Rename Tab</a>
+<a> | </a>
+<a class="bml" href="javascript:void%28s%3Dprompt%28%27Insert word or phrase to be found%3A%27%2C%27%27%29%29%3Bs%3D%27%28%27+s+%27%29%27%3Bx%3Dnew RegExp%28s%2C%27gi%27%29%3Brn%3DMath.floor%28Math.random%28%29*100%29%3Brid%3D%27z%27 + rn%3Bb %3D document.body.innerHTML%3Bb%3Db.replace%28x%2C%27<span name%3D%27 + rid + %27 id%3D%27 + rid + %27 style%3D%5C%27color%3A%23000%3Bbackground-color%3Ayellow%3B font-weight%3Abold%3B%5C%27>%241</span>%27%29%3Bvoid%28document.body.innerHTML%3Db%29%3Balert%28%27Found %27 + document.getElementsByName%28rid%29.length + %27 matches.%27%29%3Bwindow.scrollTo%280%2Cdocument.getElementsByName%28rid%29%5B0%5D.offsetTop%29%3B">Find on this Page</a>
+<a> | </a>
+<a class="bml" href="https://one-plus.github.io/index.html">OSINT TOOLKIT Website</a>
+<a> | </a>
+<a class="bml" href="javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0));if(!s.length)%7Bs=prompt('Enter%20a%20website%20below%20to%20search:','');%7Dif(s)%7Bdocument.location.href='https://www.robtex.com/dns-lookup/'+escape(s);%7Delse%7Bvoid(0);%7D">Website Information Search</a>
+<a> | </a>
+</div>
+</body>
+</html>
